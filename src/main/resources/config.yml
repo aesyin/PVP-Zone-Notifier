@@ -1,0 +1,47 @@
+# Distance (in blocks) from 0,0 at which PVP zone begins
+pvp-radius: 3000
+
+display:
+  enter: "TITLE"          # PvP zone enter message display: ACTION_BAR / TITLE / SUBTITLE
+  leave: "TITLE"       # PvP zone leave message display
+  combat: "ACTION_BAR"    # Combat countdown message display
+
+messages:
+  enter-pvp: "You are now in a PVP Zone"
+  leave-pvp: "You are now in a Safe Zone"
+
+colors:
+  enter-pvp: "red"
+  leave-pvp: "green"
+
+combat:
+  enabled: true
+  tag-duration: 15
+  punishment: "DEBUFF" # KILL, CLEAR_INVENTORY, DEBUFF, NONE
+  disable-pearls: true
+  disable-elytra: true
+
+  debuff-effects:
+    - type: POISON
+      duration: 100   # ticks (20 = 1 second)
+      amplifier: 1
+    - type: SLOWNESS
+      duration: 100
+      amplifier: 1
+    - type: BLINDNESS
+      duration: 100
+      amplifier: 1
+
+sounds:
+  enable: true
+  enter: "ENTITY_EXPERIENCE_ORB_PICKUP"  # Sound when entering PvP zone
+  leave: "ENTITY_ITEM_PICKUP"            # Sound when leaving PvP zone
+  volume: 1.0
+  pitch: 1.0
+
+  messages:
+    tag: "You are in combat!"
+    safe: "You are no longer in combat."
+    logout: "%player% logged out during combat!"
+    blocked-item: "You cannot use that while in combat!"
+

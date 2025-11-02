@@ -1,0 +1,24 @@
+name: PVPZoneNotifier
+main: com.aesyin.pvpzone.PVPZoneNotifier
+version: 1.0
+api-version: 1.21
+author: aesyin
+description: Displays an action bar message when players enter or leave a PVP zone (Designed for NoNameSMP).
+
+commands:
+  pvpzonereload:
+    description: Reloads the PVPZoneNotifier configuration.
+    usage: /pvpzonereload
+    permission: pvpzone.reload
+ 
+  pvpzoneradius:
+    description: Set the PvP zone radius
+    usage: /pvpzoneradius <number>
+    permission: pvpzone.admin
+    permission-message: You don't have permission to use this command.
+
+permissions:
+  pvpzone.reload:
+    description: Allows reloading the plugin configuration.
+    default: op
+  
