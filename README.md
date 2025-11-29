@@ -35,7 +35,7 @@
 
 3. Restart or reload the server.
 
-4. Edit the config.yml in /Plugins/PVPZonesNotifier to suit your needs.
+4. Edit the config.yml in /plugins/PVPZonesNotifier to suit your needs.
 
 5. The plugin should start working after that.
 
